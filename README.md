@@ -1,5 +1,7 @@
 # pydantic-default-value-inconsistency-test
 
+For bug report: https://github.com/samuelcolvin/pydantic/issues/2165
+
 It seems `pydantic` sets the default value of a required field of a statically created model as `None`. This was the case until `v1.7.2` for the required fields of dynamically created models. However with the `v1.7.3` there seems to be an inconsistent behaviour where the default value for the required fields of dynamically created models are set to be `Ellipsis`. I'm not aware whether this was intentional, or consistent behaviour between statically and dynamically created models is sought after but I wanted to point that out in case it is a regression.
 
 To run the tests with different pydantic versions:
