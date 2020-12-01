@@ -1,0 +1,1 @@
+# pydantic-default-value-inconsistency-test
